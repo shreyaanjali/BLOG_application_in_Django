@@ -9,7 +9,7 @@ python -m venv <virtual-env-name>
 ## install lib (first-time & on update)
 ```commandline
 source <virtual-env-name>/bin/activate
-pip install < requirements.txt
+pip install -r requirements.txt
 ```
 
 ## run (virtual env initialized)
