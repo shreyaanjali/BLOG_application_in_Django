@@ -1,5 +1,9 @@
 asgiref==3.7.2
-Django==3.2.12
-pytz==2023.3
+backports.zoneinfo==0.2.1
+configparser==6.0.0
+Django==4.2.5
+django-mysql==3.2.0
+mysqlclient==2.2.0
+PyMySQL==1.1.0
 sqlparse==0.4.4
-typing-extensions==4.7.1
+typing_extensions==4.7.1
