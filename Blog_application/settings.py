@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'Python_BLOG_Project',
         'USER': 'root',
         'PASSWORD': 'Password123#',
-        'HOST':  'pythonblogproject.cvpjnpqphtjs.ap-south-1.rds.amazonaws.com',
+        'HOST':  'db1.c7xdkpnimrod.us-east-1.rds.amazonaws.com',
         'PORT':  '3306',
     }
 }
