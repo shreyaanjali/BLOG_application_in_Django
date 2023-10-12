@@ -1,3 +1,4 @@
+
 # sample-blog-django-py
 
 # installation  
@@ -20,3 +21,6 @@ pip install -r requirements.txt
 ```commandline
 python manage.py runserver
 ```
+=======
+#BLOG_application_in_Django
+>>>>>>> origin/main
