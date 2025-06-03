@@ -29,11 +29,7 @@ jobs:
       run:  terraform init
       working-directory: .github/workflows/
 
-    - name: Terraform Plan
-      run:  terraform plan -out=tfplan
-      working-directory: .github/workflows/
-
-    - name: Terraform Apply
+    - name: Terraform Destroy
       run:  terraform destroy -auto-approve tfplan
       working-directory: .github/workflows/
 
