@@ -27,13 +27,17 @@ jobs:
     
     - name: Terraform Init
       run:  terraform init
+      working-directory: .github/workflows/
 
     - name: Terraform Plan
       run:  terraform plan -out=tfplan
+      working-directory: .github/workflows/
 
     - name: Terraform Apply
       run:  terraform apply -auto-approve tfplan
+      working-directory: .github/workflows/
 
     - name: Terraform Show Outputs
       run:  terraform output
+      working-directory: .github/workflows/
 
