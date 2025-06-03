@@ -34,7 +34,7 @@ jobs:
       working-directory: .github/workflows/
 
     - name: Terraform Apply
-      run:  terraform apply -auto-approve tfplan
+      run:  terraform destroy -auto-approve tfplan
       working-directory: .github/workflows/
 
     - name: Terraform Show Outputs
