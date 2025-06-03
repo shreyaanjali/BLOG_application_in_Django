@@ -21,7 +21,7 @@ jobs:
     
 
     - name: Setup Terraform
-      uses: hasicorp/setup-terraform@v2
+      uses: hasicorp/setup-terraform@v2.0.0
       with:
         terraform_version: ${{ env.TERRAFORM_VER }}
     
