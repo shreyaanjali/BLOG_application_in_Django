@@ -13,7 +13,7 @@ jobs:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_REGION: us-east-1
-      TERRAFORM_VER: 1.5.1
+      TERRAFORM_VER: 1.1.7
       
     steps:
     - name: Checkout Repository
@@ -21,7 +21,7 @@ jobs:
     
 
     - name: Setup Terraform
-      uses: hasicorp/setup-terraform@v1
+      uses: hasicorp/setup-terraform@v3
       with:
         terraform_version: ${{ env.TERRAFORM_VER }}
     
