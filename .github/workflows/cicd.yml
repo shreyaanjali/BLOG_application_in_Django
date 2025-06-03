@@ -3,7 +3,7 @@ name: Terraform Deploy
 on:
   push:
     branches: [ "shreyaanjali-githubaction-1" ]
-    paths: [.github/workflow/**]
+    paths: [.github/workflows/**]
 
 jobs:
   terraform:
