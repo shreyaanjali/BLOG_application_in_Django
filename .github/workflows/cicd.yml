@@ -29,11 +29,11 @@ jobs:
       run:  terraform init
       working-directory: .github/workflows/
 
-    - name: Terraform Destroy
-      run:  terraform destroy -auto-approve 
+    - name: Terraform Plan
+      run:  terraform plan 
       working-directory: .github/workflows/
 
-    - name: Terraform Show Outputs
-      run:  terraform output
+    - name: Terraform Apply
+      run:  terraform apply -auto-apptove
       working-directory: .github/workflows/
 

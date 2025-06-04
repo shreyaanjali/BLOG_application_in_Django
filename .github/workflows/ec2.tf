@@ -9,25 +9,6 @@ resource "aws_instance" "web" {
   subnet_id                   = aws_subnet.public-subnet.id
   associate_public_ip_address = "true"
 
-    user_data = file("./user_data.sh")
+  user_data = file("user_data.sh")
 }
-  #resource "null_resource" "docker_check" {
-  #  depends_on = [aws_instance.web]
-  #
-  #  provisioner "remote-exec" {
-  #     inline = [
-  #          "sleep 60",
-  #         "docker --version"
-  #      ]
-#
-  #       connection {
-  #           type        = "ssh"
-  #           user        = "ubuntu"
-  #           host        = aws_instance.web.public_ip
-  #           private_key = file("../../Key_githubaction.pem")
-  #      }
-  #  }
-#
-  #}
-#
-#
+ 
