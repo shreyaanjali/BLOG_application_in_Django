@@ -34,7 +34,7 @@ jobs:
       working-directory: .github/workflows/
 
     - name: Terraform Plan
-      run:  terraform plan -auto-approve
+      run:  terraform plan 
       working-directory: .github/workflows/
     
     - name: Terraform Apply
