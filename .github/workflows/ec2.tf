@@ -1,6 +1,11 @@
 # creation of ec2 with public ip and installed docker using userdata.
 
 
+backend "s3" {
+     region = "us-east-1"
+     key = "terraform.tfstate"
+}
+
 resource "aws_instance" "web" {
   ami                         = "ami-084568db4383264d4"
   instance_type               = "t2.micro"
