@@ -1,10 +1,13 @@
 # creation of ec2 with public ip and installed docker using userdata.
 
-
-backend "s3" {
-     region = "us-east-1"
-     key = "terraform.tfstate"
-}
+terraform {
+    backend "s3" {
+        bucket = "my-terraform-state-bucket"
+        key = "state/terraform.tfstate"
+        region = "us-east-1"
+        dynamodb_table = "my-terraform-lock-table"
+        encrypt = true
+    }    
 
 resource "aws_instance" "web" {
   ami                         = "ami-084568db4383264d4"
@@ -15,5 +18,6 @@ resource "aws_instance" "web" {
   associate_public_ip_address = "true"
 
   user_data = file("user_data.sh")
-}
+   }
+} 
  
