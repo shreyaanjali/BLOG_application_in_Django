@@ -25,12 +25,12 @@ jobs:
       with:
         terraform_version: ${{ env.TERRAFORM_VER }}
 
-    - name: Terraform Validate
-      run:  terraform validate
-      working-directory: .github/workflows/
-    
     - name: Terraform Init
       run:  terraform init
+      working-directory: .github/workflows/
+    
+    - name: Terraform Validate
+      run:  terraform validate
       working-directory: .github/workflows/
 
     - name: Terraform Plan
