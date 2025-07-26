@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Python_BLOG_Project',
         'USER': 'root',
-        'PASSWORD': 'Password123#',
+        'PASSWORD': '',
         'HOST':  'db1.c7xdkpnimrod.us-east-1.rds.amazonaws.com',
         'PORT':  '3306',
     }
